@@ -1,3 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SiteCraft.top – Premium Website Themes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{ margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+
+body{ background:#0b0f14; color:#fff; line-height:1.6; }
+
+/* NAV */
+nav{ display:flex; justify-content:space-between; align-items:center; padding:22px 8%; }
+nav h1{ color:#00b4ff; font-weight:700; font-size:22px; }
+nav a{ color:#ccc; margin-left:18px; text-decoration:none; font-size:14px; }
+nav a:hover{ color:#00e0ff; }
+
+/* HERO */
+.hero{ display:flex; align-items:center; justify-content:space-between; padding:100px 8%; gap:40px; }
+.hero-text h2{ font-size:48px; line-height:1.2; }
+.hero-text span{ color:#00e0ff; text-shadow:0 0 8px #00e0ff,0 0 18px #00b4ff; }
+.hero-text p{ margin:18px 0; color:#aaa; font-size:15px; }
+.hero-text button{ padding:13px 26px; border:none; border-radius:30px; cursor:pointer; font-size:14px; }
+.btn-primary{ background:#00e0ff; color:#000; font-weight:600; box-shadow:0 0 10px #00e0ff33; }
+.btn-secondary{ background:transparent; color:#00e0ff; border:1px solid #00e0ff; }
+
+.hero-visual{
+  width:45%; height:260px;
+  background:linear-gradient(135deg,#00b4ff22,#00e0ff22);
+  border:1px solid #00b4ff44;
+  border-radius:22px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:17px; color:#00e0ff;
+  box-shadow:0 0 20px #00b4ff11;
+}
+
+/* PREVIEW CARDS */
+.preview{ padding:60px 8%; text-align:center; }
+.preview h3{ font-size:30px; margin-bottom:35px; }
+.card-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
+
+.card{
+  background:#111821; border:1px solid #1f2a36;
+  padding:22px; border-radius:18px;
+  text-align:left;
+  transition:0.3s;
+}
+.card:hover{ transform:translateY(-5px); border-color:#00e0ff66; }
+
+.card h4{ color:#00e0ff; margin-bottom:8px; font-size:18px; }
+.card p{ color:#aaa; font-size:14px; }
+
+/* FOOTER */
+footer{ background:#090c10; color:#666; font-size:13px; padding:22px; text-align:center; margin-top:50px; }
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{ flex-direction:column; text-align:center; }
+  .hero-visual{ width:100%; }
+}
+</style>
+</head>
+
+<body>
+
 <nav>
   <h1>SiteCraft</h1>
   <div>
@@ -8,3 +76,39 @@
     <a href="contact.html">Contact</a>
   </div>
 </nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Craft Stunning <span>Websites</span></h2>
+    <p>Premium, fast, and fully customizable website themes built for creators and businesses.</p>
+    <button class="btn-primary" onclick="location.href='themes.html'">Browse Themes</button>
+    <button class="btn-secondary" onclick="location.href='pricing.html'">Pricing Plans</button>
+  </div>
+
+  <div class="hero-visual">Website UI Preview</div>
+</section>
+
+<section class="preview">
+  <h3>Popular Themes</h3>
+  <div class="card-grid">
+    <div class="card">
+      <h4>🚀 Portfolio Zing</h4>
+      <p>Best for personal branding and showcasing work.</p>
+    </div>
+    <div class="card">
+      <h4>💼 Business Pro</h4>
+      <p>Multi-page theme optimized for speed and SEO.</p>
+    </div>
+    <div class="card">
+      <h4>🛒 Shop Lite</h4>
+      <p>E-commerce ready clean store design.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 SiteCraft.top – All rights reserved
+</footer>
+
+</body>
+</html>
